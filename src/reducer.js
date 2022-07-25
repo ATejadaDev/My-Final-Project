@@ -1,5 +1,6 @@
 export const initialState = {
     basket: [],
+    user: null
 };
 
 // Total de productos
@@ -31,6 +32,12 @@ function reducer(state, action) {
             return  {
                 ...state,
                 basket: newBasket
+            }
+        
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
             }
             
         default:

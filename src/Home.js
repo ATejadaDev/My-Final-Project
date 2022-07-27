@@ -33,14 +33,14 @@ function Home() {
           <Product
             id="4903850"
             title="PlayStation 5 - Mando inalámbrico DualSense - Exclusivo para PS5"
-            price={199.99}
+            price={55.00}
             rating={3}
             image="https://m.media-amazon.com/images/I/51KNE0DS4vS._AC_SX679_.jpg"
           />
           <Product
             id="23445930"
             title="SanDisk SDSSDA-240G Plus – Disco sólido interno de 240 GB, SATA III SSD, con hasta 530 MB/s, Color Negro"
-            price={98.99}
+            price={38.97}
             rating={5}
             image="https://m.media-amazon.com/images/I/71J4Q8zM72L._AC_SX450_.jpg"
           />

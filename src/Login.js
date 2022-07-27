@@ -14,6 +14,7 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
+                // 
                 history.push('/')
             })
             .catch(error => alert(error.message))
@@ -25,7 +26,7 @@ function Login() {
         auth
             .createUserWithEmailAndPassword(email, password)
             .then((auth) => {
-                // it successfully created a new user with email and password
+                // Si crea un usuario de forma correcta, que haga un push a /
                 if (auth) {
                     history.push('/')
                 }
@@ -38,7 +39,7 @@ function Login() {
             <Link to='/'>
                 <img
                     className="login__logo"
-                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
+                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' alt='xd'
                 />
             </Link>
 

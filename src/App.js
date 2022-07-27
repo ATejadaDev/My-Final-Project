@@ -12,20 +12,20 @@ function App() {
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
-    // will only run once when the app component loads...
+    // Esto solo se usará la primera vez que el usuario haga login
 
     auth.onAuthStateChanged(authUser => {
       console.log('THE USER IS >>> ', authUser);
 
       if (authUser) {
-        // the user just logged in / the user was logged in
+        // Si el usuario está logueado, lo autentifica usando el authUser
 
         dispatch({
           type: 'SET_USER',
           user: authUser
         })
       } else {
-        // the user is logged out
+        // Si no está autenticado, el usuario se vuelve null
         dispatch({
           type: 'SET_USER',
           user: null
